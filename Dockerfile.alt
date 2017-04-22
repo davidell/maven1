@@ -1,0 +1,8 @@
+FROM nginx
+ENV BACENVIRONMENT=DEV
+COPY web /usr/share/nginx/html
+#
+#
+#COPY gres.sh /usr/sbin/gres.sh
+#RUN chmod +x /usr/sbin/gres.sh
+#
