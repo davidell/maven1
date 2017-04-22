@@ -1,10 +1,6 @@
-FROM nginx
+FROM nginx:latest
 ENV BACENVIRONMENT=DEV
 COPY web /usr/share/nginx/html
-ENTRYPOINT ["nginx -g 'daemon off;'"]
-VOLUME /dave /gres
-#
-#
-#COPY gres.sh /usr/sbin/gres.sh
-#RUN chmod +x /usr/sbin/gres.sh
-#
+ENTRYPOINT ["nginx"]
+CMD ["-g", "daemon off;"]
+VOLUME /gres:/gres
