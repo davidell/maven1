@@ -1,4 +1,5 @@
 FROM tomcat:8.5.13-alpine
+MAINTAINER davidell@comcast.net
 #FROM dordoka/tomcat:latest
 COPY sample.war /usr/local/tomcat/webapps/
 COPY index.html /usr/local/tomcat/
