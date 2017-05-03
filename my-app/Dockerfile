@@ -4,6 +4,6 @@ COPY pom.xml /usr/src/myapp
 RUN mvn -f /usr/src/myapp/pom.xml clean package
 
 #FROM jboss/wildfly:10.1.0.Final
-FROM 
-
-COPY --from=BUILD /usr/src/myapp/target/*.jar /opt/jboss/wildfly/standalone/deployments/people.war
+FROM tomcat:8.5.13-alpine
+#COPY *.war /usr/local/tomcat/webapps/
+COPY --from=BUILD /usr/src/myapp/target/*.war /usr/local/tomcat/webapps/
