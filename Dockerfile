@@ -3,7 +3,7 @@ MAINTAINER davidell@comcast.net
 #FROM dordoka/tomcat:latest
 COPY sample.war /usr/local/tomcat/webapps/
 ADD index.html /usr/local/tomcat/WEB-INF/
-COPY index.html /usr/local/tomcat/
+COPY index.html /usr/local/tomcat/webapps/ROOT/
 COPY index.html /usr/local/tomcat/WEB-INF/
 COPY index.jsp /usr/local/tomcat/WEB-INF/
 COPY index.jsp /usr/local/tomcat/webapps/ROOT/
