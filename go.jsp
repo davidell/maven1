@@ -6,11 +6,5 @@
 </head>
 <body>
 <img alt="picture1" src="cvs.jpeg">
-<table border="0">
-<tr><td valign="top">
-<h1>Docker - Modern Application Platform</h1></td><td><input type="submit"></td></tr>
-<tr><td valign="top">
-<h1>BAC</h1></td><td><input type="submit"></td></tr>
-</table>
 </body>
 </html>
