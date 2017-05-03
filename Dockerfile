@@ -4,6 +4,8 @@ MAINTAINER davidell@comcast.net
 COPY sample.war /usr/local/tomcat/webapps/
 ADD index.html /usr/local/tomcat/WEB-INF/
 COPY index.html /usr/local/tomcat/webapps/ROOT/
+COPY cvs.jpeg /usr/local/tomcat/webapps/ROOT/
+COPY go.jsp /usr/local/tomcat/webapps/ROOT/
 COPY index.html /usr/local/tomcat/WEB-INF/
 COPY index.jsp /usr/local/tomcat/WEB-INF/
 COPY index.jsp /usr/local/tomcat/webapps/ROOT/
