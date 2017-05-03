@@ -6,7 +6,7 @@ ADD index.html /usr/local/tomcat/WEB-INF/
 COPY index.html /usr/local/tomcat/
 COPY index.html /usr/local/tomcat/WEB-INF/
 COPY index.jsp /usr/local/tomcat/WEB-INF/
-COPY index.jsp /usr/local/tomcat/ROOT/
+COPY index.jsp /usr/local/tomcat/webapps/ROOT/
 COPY index.jsp /usr/local/tomcat/webapps/
 
 #COPY hello.war /usr/local/tomcat/webapps/
