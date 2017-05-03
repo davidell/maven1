@@ -1,1 +1,2 @@
 Hello ${MYVAR1} ${MYVAR2} ${MYVAR3}
+The conversion for 1.00 USD is $${BRL}
