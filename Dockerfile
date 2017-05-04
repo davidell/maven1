@@ -4,6 +4,6 @@ FROM maven:3-jdk-9-onbuild as BUILD
 COPY pom.xml /usr/src/myapp
 RUN mvn -f /usr/src/myapp/pom.xml clean package
 #FROM jboss/wildfly:10.1.0.Final
-FROM tomcat:8.5.13-alpine
+FROM tomcat:8.5.14
 #COPY *.war /usr/local/tomcat/webapps/
 COPY --from=BUILD /usr/src/myapp/target/*.war /usr/local/tomcat/webapps/
